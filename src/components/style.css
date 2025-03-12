@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/* book.jsx */
+.book-card{
+    width: 250px;
+    height: 420px;
+    background-color: #fff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    overflow: hidden;
+
+}
+
+.book-cover{
+    height: 246px;
+    width: 250px;
+}
+
+.book-details{
+    padding: 15px;
+}
+.book-card:hover{
+    transform: scale(1.1);
+}
+
+.book-title{
+   font-size: 1em;
+   margin-bottom: 10px;
+}
+
+.book-author{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.book-description{
+    color: #777;
+} 
+
+.view-more-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #2980b9;
+}
+.book-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.book-card p:nth-child(4) { /* Target the rating */
+  font-weight: bold;
+  color: #f39c12; /* Gold color for stars */
+}
+
+
+/* this was my previous css for book can you make it better */
+
+/* bookList.jsx */
+
+.popular{
+  margin-left: 11rem;
+}
+.bookList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.search{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    padding: 1rem 1rem 1rem 1rem;
+    
+}
+
+.search-input{
+    width: 400px;
+    margin: 20px;
+}
+.book-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .book-details-container h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .book-details-container h2 {
+    font-size: 22px;
+    color: #444;
+    margin: 10px 0;
+  }
+  
+  .book-details-container h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .book-details-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .book-details-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .book-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e63946;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
